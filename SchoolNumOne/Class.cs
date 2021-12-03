@@ -1,16 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace SchoolNumOne
 {
-    public class SchoolDbContext : DbContext
+    public class Class
     {
-        public SchoolDbContext() :base("SchoolDbConnecting")
-        {
-        }
+        public int id { get; set; }
+        public string NameClass { get; set; }
+        public int sum { get; set; }
     }
 }
