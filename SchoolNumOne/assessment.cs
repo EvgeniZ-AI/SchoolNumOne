@@ -10,6 +10,7 @@ namespace SchoolNumOne
     {
         public int id { get; set; }
         public int[] assessments { get; set; }
+        public int studentId { get; set; }
 
         public virtual Student Student { get; set; }
     }
