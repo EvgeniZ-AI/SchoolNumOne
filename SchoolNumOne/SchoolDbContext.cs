@@ -12,5 +12,8 @@ namespace SchoolNumOne
         public SchoolDbContext() :base("SchoolDbConnecting")
         {
         }
+        public DbSet<Class> Classes { get; set; }
+        public DbSet<Student> Students { get; set; }
+        public DbSet<assessment> assessments { get; set; }
     }
 }
