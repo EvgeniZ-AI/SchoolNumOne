@@ -130,7 +130,6 @@ namespace SchoolNumOne
                 context.Students.Add(AntonSh);
                 context.Students.Add(ArseniP);
             }
-            //добавить в каждый класс учеников 
             //добавить каждому ученику оценки
             //вызывать запросы при помощи Linq
         }
