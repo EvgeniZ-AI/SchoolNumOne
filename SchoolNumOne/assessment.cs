@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace SchoolNumOne
 {
-    class assessment
+    public class assessment
     {
         public int id { get; set; }
         public int[] assessments { get; set; }
+
+        public virtual Student Student { get; set; }
     }
 }

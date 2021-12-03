@@ -11,5 +11,7 @@ namespace SchoolNumOne
         public int id { get; set; }
         public string NameClass { get; set; }
         public int sum { get; set; }
+
+        public virtual ICollection<Student> Students { get; set; }
     }
 }
