@@ -8,7 +8,7 @@ namespace SchoolNumOne
 {
     class Program
     {
-        Random rnd = new Random();
+        static Random rnd = new Random();
         static void Main(string[] args)
         {
             using (var context = new SchoolDbContext())
@@ -150,6 +150,56 @@ namespace SchoolNumOne
                 ArrayStudent.Add(ArseniP);
                 //TODO: Сделать добовление в цикле
 
+                var assess = new List<assessment>()
+                {
+                    new assessment(){assessments = rnd.Next(0,6) , studentId = 1},
+                    new assessment(){assessments = rnd.Next(0,6) , studentId = 1},
+                    new assessment(){assessments = rnd.Next(0,6) , studentId = 1},
+                    new assessment(){assessments = rnd.Next(0,6) , studentId = 1},
+                    new assessment(){assessments = rnd.Next(0,6) , studentId = 1},
+                    new assessment(){assessments = rnd.Next(0,6) , studentId = 1},
+                    new assessment(){assessments = rnd.Next(0,6) , studentId = 1},
+                    new assessment(){assessments = rnd.Next(0,6) , studentId = 1},
+                    new assessment(){assessments = rnd.Next(0,6) , studentId = 1},
+                    new assessment(){assessments = rnd.Next(0,6) , studentId = 1},
+
+                    new assessment(){assessments = rnd.Next(0,6) , studentId = 2},
+                    new assessment(){assessments = rnd.Next(0,6) , studentId = 2},
+                    new assessment(){assessments = rnd.Next(0,6) , studentId = 2},
+                    new assessment(){assessments = rnd.Next(0,6) , studentId = 2},
+                    new assessment(){assessments = rnd.Next(0,6) , studentId = 2},
+                    new assessment(){assessments = rnd.Next(0,6) , studentId = 2},
+                    new assessment(){assessments = rnd.Next(0,6) , studentId = 2},
+                    new assessment(){assessments = rnd.Next(0,6) , studentId = 2},
+                    new assessment(){assessments = rnd.Next(0,6) , studentId = 2},
+                    new assessment(){assessments = rnd.Next(0,6) , studentId = 2},
+                    new assessment(){assessments = rnd.Next(0,6) , studentId = 2},
+
+                    new assessment(){assessments = rnd.Next(0,6) , studentId = 3},
+                    new assessment(){assessments = rnd.Next(0,6) , studentId = 3},
+                    new assessment(){assessments = rnd.Next(0,6) , studentId = 3},
+                    new assessment(){assessments = rnd.Next(0,6) , studentId = 3},
+                    new assessment(){assessments = rnd.Next(0,6) , studentId = 3},
+                    new assessment(){assessments = rnd.Next(0,6) , studentId = 3},
+                    new assessment(){assessments = rnd.Next(0,6) , studentId = 3},
+                    new assessment(){assessments = rnd.Next(0,6) , studentId = 3},
+                    new assessment(){assessments = rnd.Next(0,6) , studentId = 3},
+                    new assessment(){assessments = rnd.Next(0,6) , studentId = 3},
+
+                    new assessment(){assessments = rnd.Next(0,6) , studentId = 4},
+                    new assessment(){assessments = rnd.Next(0,6) , studentId = 4},
+                    new assessment(){assessments = rnd.Next(0,6) , studentId = 4},
+                    new assessment(){assessments = rnd.Next(0,6) , studentId = 4},
+                    new assessment(){assessments = rnd.Next(0,6) , studentId = 4},
+                    new assessment(){assessments = rnd.Next(0,6) , studentId = 4},
+                    new assessment(){assessments = rnd.Next(0,6) , studentId = 4},
+                    new assessment(){assessments = rnd.Next(0,6) , studentId = 4},
+                    new assessment(){assessments = rnd.Next(0,6) , studentId = 4},
+                    new assessment(){assessments = rnd.Next(0,6) , studentId = 4},
+                };
+                context.assessments.AddRange(assess);
+
+                context.SaveChanges();
             }
             //добавить каждому ученику оценки
             //вызывать запросы при помощи Linq
