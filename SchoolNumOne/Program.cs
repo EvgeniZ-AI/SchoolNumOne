@@ -8,6 +8,7 @@ namespace SchoolNumOne
 {
     class Program
     {
+        Random rnd = new Random();
         static void Main(string[] args)
         {
             using (var context = new SchoolDbContext())
@@ -129,6 +130,26 @@ namespace SchoolNumOne
 
                 context.Students.Add(AntonSh);
                 context.Students.Add(ArseniP);
+
+                var ArrayStudent = new List<Student>();
+
+                // мне больно на это смотреть... 
+                ArrayStudent.Add(EvgeniR);
+                ArrayStudent.Add(AleksandrV);
+                ArrayStudent.Add(AlinaB);
+                ArrayStudent.Add(AleksandrM);
+                ArrayStudent.Add(AndreyG);
+                ArrayStudent.Add(AlinaG);
+                ArrayStudent.Add(MarinaL);
+                ArrayStudent.Add(TonyP);
+                ArrayStudent.Add(TatianaA);
+                ArrayStudent.Add(ElenaK);
+                ArrayStudent.Add(TatianaB);
+                ArrayStudent.Add(ElenaB);
+                ArrayStudent.Add(AntonSh);
+                ArrayStudent.Add(ArseniP);
+                //TODO: Сделать добовление в цикле
+
             }
             //добавить каждому ученику оценки
             //вызывать запросы при помощи Linq
